@@ -12,7 +12,10 @@
         "esModuleInterop": true,
         "lib": ["ESNext", "DOM"],
         "skipLibCheck": true,
-        "noEmit": true
+        "noEmit": true,
+        "paths": {
+            "@composables/*": ["./lib/utils/composables/*"]
+        }
     },
     "include": ["lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"],
     "references": [{ "path": "./tsconfig.node.json" }]

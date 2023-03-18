@@ -5,7 +5,11 @@
         "composite": true,
         "module": "ESNext",
         "moduleResolution": "Node",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+
+        "paths": {
+            "@composables/*": ["./lib/utils/composables"]
+        }
     },
     "include": ["vite.config.ts"]
 }
