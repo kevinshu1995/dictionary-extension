@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "vue";
+import TextSelection from "./components/textSelection/TextSelection.vue";
 
 const isDev = import.meta.env.DEV;
 </script>
@@ -10,5 +11,6 @@ const isDev = import.meta.env.DEV;
             <component :is="defineAsyncComponent(() => import('./components/TestSection.vue'))" />
         </div>
     </div>
+    <TextSelection />
 </template>
 
