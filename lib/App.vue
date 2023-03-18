@@ -4,9 +4,7 @@ const isDev = import.meta.env.DEV;
 
 <template>
     <div v-if="isDev">
-        <section>Testing section</section>
+        <section class="-text-gray-600">Testing section</section>
     </div>
 </template>
-
-<style scoped></style>
 

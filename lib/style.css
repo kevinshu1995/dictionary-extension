@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :where(#dictionary-extension-app) {
+        --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol", "Noto Color Emoji";
+        --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+            "Courier New", monospace;
+        --border-color: rgb(209 213 219);
+        --placeholder-color: rgb(156 163 175);
+    }
+    :where(#dictionary-extension-app) *,
+    :where(#dictionary-extension-app) ::before,
+    :where(#dictionary-extension-app) ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: var(--border-color);
+    }
+    :where(#dictionary-extension-app) {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: var(--font-sans);
+    }
+    :where(#dictionary-extension-app) {
+        margin: 0;
+        line-height: inherit;
+    }
+    :where(#dictionary-extension-app) hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+    }
+    :where(#dictionary-extension-app) abbr:where([title]) {
+        text-decoration: underline dotted;
+    }
+    :where(#dictionary-extension-app) h1,
+    :where(#dictionary-extension-app) h2,
+    :where(#dictionary-extension-app) h3,
+    :where(#dictionary-extension-app) h4,
+    :where(#dictionary-extension-app) h5,
+    :where(#dictionary-extension-app) h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    :where(#dictionary-extension-app) a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    :where(#dictionary-extension-app) b,
+    :where(#dictionary-extension-app) strong {
+        font-weight: bolder;
+    }
+    :where(#dictionary-extension-app) code,
+    :where(#dictionary-extension-app) kbd,
+    :where(#dictionary-extension-app) samp,
+    :where(#dictionary-extension-app) pre {
+        font-family: var(--font-mono);
+        font-size: 1em;
+    }
+    :where(#dictionary-extension-app) small {
+        font-size: 80%;
+    }
+    :where(#dictionary-extension-app) sub,
+    :where(#dictionary-extension-app) sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    :where(#dictionary-extension-app) sub {
+        bottom: -0.25em;
+    }
+    :where(#dictionary-extension-app) sup {
+        top: -0.5em;
+    }
+    :where(#dictionary-extension-app) table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+    }
+    :where(#dictionary-extension-app) button,
+    :where(#dictionary-extension-app) input,
+    :where(#dictionary-extension-app) optgroup,
+    :where(#dictionary-extension-app) select,
+    :where(#dictionary-extension-app) textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+    :where(#dictionary-extension-app) button,
+    :where(#dictionary-extension-app) select {
+        text-transform: none;
+    }
+    :where(#dictionary-extension-app) button,
+    :where(#dictionary-extension-app) [type="button"],
+    :where(#dictionary-extension-app) [type="reset"],
+    :where(#dictionary-extension-app) [type="submit"] {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+    }
+    :where(#dictionary-extension-app) :-moz-focusring {
+        outline: auto;
+    }
+    :where(#dictionary-extension-app) :-moz-ui-invalid {
+        box-shadow: none;
+    }
+    :where(#dictionary-extension-app) progress {
+        vertical-align: baseline;
+    }
+    :where(#dictionary-extension-app) ::-webkit-inner-spin-button,
+    :where(#dictionary-extension-app) ::-webkit-outer-spin-button {
+        height: auto;
+    }
+    :where(#dictionary-extension-app) [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+    }
+    :where(#dictionary-extension-app) ::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+    :where(#dictionary-extension-app) ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+    }
+    :where(#dictionary-extension-app) summary {
+        display: list-item;
+    }
+    :where(#dictionary-extension-app) blockquote,
+    :where(#dictionary-extension-app) dl,
+    :where(#dictionary-extension-app) dd,
+    :where(#dictionary-extension-app) h1,
+    :where(#dictionary-extension-app) h2,
+    :where(#dictionary-extension-app) h3,
+    :where(#dictionary-extension-app) h4,
+    :where(#dictionary-extension-app) h5,
+    :where(#dictionary-extension-app) h6,
+    :where(#dictionary-extension-app) hr,
+    :where(#dictionary-extension-app) figure,
+    :where(#dictionary-extension-app) p,
+    :where(#dictionary-extension-app) pre {
+        margin: 0;
+    }
+    :where(#dictionary-extension-app) fieldset {
+        margin: 0;
+        padding: 0;
+    }
+    :where(#dictionary-extension-app) legend {
+        padding: 0;
+    }
+    :where(#dictionary-extension-app) ol,
+    :where(#dictionary-extension-app) ul,
+    :where(#dictionary-extension-app) menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    :where(#dictionary-extension-app) textarea {
+        resize: vertical;
+    }
+    :where(#dictionary-extension-app) input::placeholder,
+    :where(#dictionary-extension-app) textarea::placeholder {
+        opacity: 1;
+        color: var(--placeholder-color);
+    }
+    :where(#dictionary-extension-app) button,
+    :where(#dictionary-extension-app) [role="button"] {
+        cursor: pointer;
+    }
+    :where(#dictionary-extension-app) :disabled {
+        cursor: default;
+    }
+    :where(#dictionary-extension-app) img,
+    :where(#dictionary-extension-app) svg,
+    :where(#dictionary-extension-app) video,
+    :where(#dictionary-extension-app) canvas,
+    :where(#dictionary-extension-app) audio,
+    :where(#dictionary-extension-app) iframe,
+    :where(#dictionary-extension-app) embed,
+    :where(#dictionary-extension-app) object {
+        display: block;
+        vertical-align: middle;
+    }
+    :where(#dictionary-extension-app) img,
+    :where(#dictionary-extension-app) video {
+        max-width: 100%;
+        height: auto;
+    }
+    :where(#dictionary-extension-app) [hidden] {
+        display: none;
+    }
+}
+
