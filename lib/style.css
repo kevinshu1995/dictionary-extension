@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    :where(#tailwind-preflight-container) {
+    #dictionary-extension-app-container {
         --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
             "Segoe UI Symbol", "Noto Color Emoji";
@@ -12,84 +12,82 @@
             "Courier New", monospace;
         --border-color: rgb(209 213 219);
         --placeholder-color: rgb(156 163 175);
-    }
-    :where(#tailwind-preflight-container) *,
-    :where(#tailwind-preflight-container) ::before,
-    :where(#tailwind-preflight-container) ::after {
-        box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
-        border-color: var(--border-color);
-    }
-    :where(#tailwind-preflight-container) {
+
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
         -moz-tab-size: 4;
         tab-size: 4;
         font-family: var(--font-sans);
-    }
-    :where(#tailwind-preflight-container) {
+
         margin: 0;
         line-height: inherit;
     }
-    :where(#tailwind-preflight-container) hr {
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: var(--border-color);
+    }
+    hr {
         height: 0;
         color: inherit;
         border-top-width: 1px;
     }
-    :where(#tailwind-preflight-container) abbr:where([title]) {
+    abbr:where([title]) {
         text-decoration: underline dotted;
     }
-    :where(#tailwind-preflight-container) h1,
-    :where(#tailwind-preflight-container) h2,
-    :where(#tailwind-preflight-container) h3,
-    :where(#tailwind-preflight-container) h4,
-    :where(#tailwind-preflight-container) h5,
-    :where(#tailwind-preflight-container) h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: inherit;
         font-weight: inherit;
     }
-    :where(#tailwind-preflight-container) a {
+    a {
         color: inherit;
         text-decoration: inherit;
     }
-    :where(#tailwind-preflight-container) b,
-    :where(#tailwind-preflight-container) strong {
+    b,
+    strong {
         font-weight: bolder;
     }
-    :where(#tailwind-preflight-container) code,
-    :where(#tailwind-preflight-container) kbd,
-    :where(#tailwind-preflight-container) samp,
-    :where(#tailwind-preflight-container) pre {
+    code,
+    kbd,
+    samp,
+    pre {
         font-family: var(--font-mono);
         font-size: 1em;
     }
-    :where(#tailwind-preflight-container) small {
+    small {
         font-size: 80%;
     }
-    :where(#tailwind-preflight-container) sub,
-    :where(#tailwind-preflight-container) sup {
+    sub,
+    sup {
         font-size: 75%;
         line-height: 0;
         position: relative;
         vertical-align: baseline;
     }
-    :where(#tailwind-preflight-container) sub {
+    sub {
         bottom: -0.25em;
     }
-    :where(#tailwind-preflight-container) sup {
+    sup {
         top: -0.5em;
     }
-    :where(#tailwind-preflight-container) table {
+    table {
         text-indent: 0;
         border-color: inherit;
         border-collapse: collapse;
     }
-    :where(#tailwind-preflight-container) button,
-    :where(#tailwind-preflight-container) input,
-    :where(#tailwind-preflight-container) optgroup,
-    :where(#tailwind-preflight-container) select,
-    :where(#tailwind-preflight-container) textarea {
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
         font-family: inherit;
         font-size: 100%;
         line-height: inherit;
@@ -97,106 +95,106 @@
         margin: 0;
         padding: 0;
     }
-    :where(#tailwind-preflight-container) button,
-    :where(#tailwind-preflight-container) select {
+    button,
+    select {
         text-transform: none;
     }
-    :where(#tailwind-preflight-container) button,
-    :where(#tailwind-preflight-container) [type="button"],
-    :where(#tailwind-preflight-container) [type="reset"],
-    :where(#tailwind-preflight-container) [type="submit"] {
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
         -webkit-appearance: button;
         background-color: transparent;
         background-image: none;
     }
-    :where(#tailwind-preflight-container) :-moz-focusring {
+    :-moz-focusring {
         outline: auto;
     }
-    :where(#tailwind-preflight-container) :-moz-ui-invalid {
+    :-moz-ui-invalid {
         box-shadow: none;
     }
-    :where(#tailwind-preflight-container) progress {
+    progress {
         vertical-align: baseline;
     }
-    :where(#tailwind-preflight-container) ::-webkit-inner-spin-button,
-    :where(#tailwind-preflight-container) ::-webkit-outer-spin-button {
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
         height: auto;
     }
-    :where(#tailwind-preflight-container) [type="search"] {
+    [type="search"] {
         -webkit-appearance: textfield;
         outline-offset: -2px;
     }
-    :where(#tailwind-preflight-container) ::-webkit-search-decoration {
+    ::-webkit-search-decoration {
         -webkit-appearance: none;
     }
-    :where(#tailwind-preflight-container) ::-webkit-file-upload-button {
+    ::-webkit-file-upload-button {
         -webkit-appearance: button;
         font: inherit;
     }
-    :where(#tailwind-preflight-container) summary {
+    summary {
         display: list-item;
     }
-    :where(#tailwind-preflight-container) blockquote,
-    :where(#tailwind-preflight-container) dl,
-    :where(#tailwind-preflight-container) dd,
-    :where(#tailwind-preflight-container) h1,
-    :where(#tailwind-preflight-container) h2,
-    :where(#tailwind-preflight-container) h3,
-    :where(#tailwind-preflight-container) h4,
-    :where(#tailwind-preflight-container) h5,
-    :where(#tailwind-preflight-container) h6,
-    :where(#tailwind-preflight-container) hr,
-    :where(#tailwind-preflight-container) figure,
-    :where(#tailwind-preflight-container) p,
-    :where(#tailwind-preflight-container) pre {
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
         margin: 0;
     }
-    :where(#tailwind-preflight-container) fieldset {
+    fieldset {
         margin: 0;
         padding: 0;
     }
-    :where(#tailwind-preflight-container) legend {
+    legend {
         padding: 0;
     }
-    :where(#tailwind-preflight-container) ol,
-    :where(#tailwind-preflight-container) ul,
-    :where(#tailwind-preflight-container) menu {
+    ol,
+    ul,
+    menu {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    :where(#tailwind-preflight-container) textarea {
+    textarea {
         resize: vertical;
     }
-    :where(#tailwind-preflight-container) input::placeholder,
-    :where(#tailwind-preflight-container) textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         opacity: 1;
         color: var(--placeholder-color);
     }
-    :where(#tailwind-preflight-container) button,
-    :where(#tailwind-preflight-container) [role="button"] {
+    button,
+    [role="button"] {
         cursor: pointer;
     }
-    :where(#tailwind-preflight-container) :disabled {
+    :disabled {
         cursor: default;
     }
-    :where(#tailwind-preflight-container) img,
-    :where(#tailwind-preflight-container) svg,
-    :where(#tailwind-preflight-container) video,
-    :where(#tailwind-preflight-container) canvas,
-    :where(#tailwind-preflight-container) audio,
-    :where(#tailwind-preflight-container) iframe,
-    :where(#tailwind-preflight-container) embed,
-    :where(#tailwind-preflight-container) object {
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
         display: block;
         vertical-align: middle;
     }
-    :where(#tailwind-preflight-container) img,
-    :where(#tailwind-preflight-container) video {
+    img,
+    video {
         max-width: 100%;
         height: auto;
     }
-    :where(#tailwind-preflight-container) [hidden] {
+    [hidden] {
         display: none;
     }
 }
