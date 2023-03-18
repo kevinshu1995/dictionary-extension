@@ -10,6 +10,7 @@ export default defineConfig({
             entry: resolve(__dirname, "lib/main.ts"),
             name: "dictionary",
             fileName: "dictionary",
+            formats: ["iife"],
         },
     },
 });
