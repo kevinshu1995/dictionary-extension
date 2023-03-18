@@ -3,7 +3,7 @@ module.exports = {
         tailwindcss: {},
         autoprefixer: {},
         "postcss-prefix-selector": {
-            prefix: "#dictionary-extension-app", // you can change this whatever you want
+            prefix: "#dictionary-extension-app-container", // you can change this whatever you want
         },
         "tailwindcss/nesting": {},
     },
