@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    :where(#dictionary-extension-app-container) {
+    :where(#tailwind-preflight-container) {
         --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
             "Segoe UI Symbol", "Noto Color Emoji";
@@ -13,83 +13,83 @@
         --border-color: rgb(209 213 219);
         --placeholder-color: rgb(156 163 175);
     }
-    :where(#dictionary-extension-app-container) *,
-    :where(#dictionary-extension-app-container) ::before,
-    :where(#dictionary-extension-app-container) ::after {
+    :where(#tailwind-preflight-container) *,
+    :where(#tailwind-preflight-container) ::before,
+    :where(#tailwind-preflight-container) ::after {
         box-sizing: border-box;
         border-width: 0;
         border-style: solid;
         border-color: var(--border-color);
     }
-    :where(#dictionary-extension-app-container) {
+    :where(#tailwind-preflight-container) {
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
         -moz-tab-size: 4;
         tab-size: 4;
         font-family: var(--font-sans);
     }
-    :where(#dictionary-extension-app-container) {
+    :where(#tailwind-preflight-container) {
         margin: 0;
         line-height: inherit;
     }
-    :where(#dictionary-extension-app-container) hr {
+    :where(#tailwind-preflight-container) hr {
         height: 0;
         color: inherit;
         border-top-width: 1px;
     }
-    :where(#dictionary-extension-app-container) abbr:where([title]) {
+    :where(#tailwind-preflight-container) abbr:where([title]) {
         text-decoration: underline dotted;
     }
-    :where(#dictionary-extension-app-container) h1,
-    :where(#dictionary-extension-app-container) h2,
-    :where(#dictionary-extension-app-container) h3,
-    :where(#dictionary-extension-app-container) h4,
-    :where(#dictionary-extension-app-container) h5,
-    :where(#dictionary-extension-app-container) h6 {
+    :where(#tailwind-preflight-container) h1,
+    :where(#tailwind-preflight-container) h2,
+    :where(#tailwind-preflight-container) h3,
+    :where(#tailwind-preflight-container) h4,
+    :where(#tailwind-preflight-container) h5,
+    :where(#tailwind-preflight-container) h6 {
         font-size: inherit;
         font-weight: inherit;
     }
-    :where(#dictionary-extension-app-container) a {
+    :where(#tailwind-preflight-container) a {
         color: inherit;
         text-decoration: inherit;
     }
-    :where(#dictionary-extension-app-container) b,
-    :where(#dictionary-extension-app-container) strong {
+    :where(#tailwind-preflight-container) b,
+    :where(#tailwind-preflight-container) strong {
         font-weight: bolder;
     }
-    :where(#dictionary-extension-app-container) code,
-    :where(#dictionary-extension-app-container) kbd,
-    :where(#dictionary-extension-app-container) samp,
-    :where(#dictionary-extension-app-container) pre {
+    :where(#tailwind-preflight-container) code,
+    :where(#tailwind-preflight-container) kbd,
+    :where(#tailwind-preflight-container) samp,
+    :where(#tailwind-preflight-container) pre {
         font-family: var(--font-mono);
         font-size: 1em;
     }
-    :where(#dictionary-extension-app-container) small {
+    :where(#tailwind-preflight-container) small {
         font-size: 80%;
     }
-    :where(#dictionary-extension-app-container) sub,
-    :where(#dictionary-extension-app-container) sup {
+    :where(#tailwind-preflight-container) sub,
+    :where(#tailwind-preflight-container) sup {
         font-size: 75%;
         line-height: 0;
         position: relative;
         vertical-align: baseline;
     }
-    :where(#dictionary-extension-app-container) sub {
+    :where(#tailwind-preflight-container) sub {
         bottom: -0.25em;
     }
-    :where(#dictionary-extension-app-container) sup {
+    :where(#tailwind-preflight-container) sup {
         top: -0.5em;
     }
-    :where(#dictionary-extension-app-container) table {
+    :where(#tailwind-preflight-container) table {
         text-indent: 0;
         border-color: inherit;
         border-collapse: collapse;
     }
-    :where(#dictionary-extension-app-container) button,
-    :where(#dictionary-extension-app-container) input,
-    :where(#dictionary-extension-app-container) optgroup,
-    :where(#dictionary-extension-app-container) select,
-    :where(#dictionary-extension-app-container) textarea {
+    :where(#tailwind-preflight-container) button,
+    :where(#tailwind-preflight-container) input,
+    :where(#tailwind-preflight-container) optgroup,
+    :where(#tailwind-preflight-container) select,
+    :where(#tailwind-preflight-container) textarea {
         font-family: inherit;
         font-size: 100%;
         line-height: inherit;
@@ -97,106 +97,106 @@
         margin: 0;
         padding: 0;
     }
-    :where(#dictionary-extension-app-container) button,
-    :where(#dictionary-extension-app-container) select {
+    :where(#tailwind-preflight-container) button,
+    :where(#tailwind-preflight-container) select {
         text-transform: none;
     }
-    :where(#dictionary-extension-app-container) button,
-    :where(#dictionary-extension-app-container) [type="button"],
-    :where(#dictionary-extension-app-container) [type="reset"],
-    :where(#dictionary-extension-app-container) [type="submit"] {
+    :where(#tailwind-preflight-container) button,
+    :where(#tailwind-preflight-container) [type="button"],
+    :where(#tailwind-preflight-container) [type="reset"],
+    :where(#tailwind-preflight-container) [type="submit"] {
         -webkit-appearance: button;
         background-color: transparent;
         background-image: none;
     }
-    :where(#dictionary-extension-app-container) :-moz-focusring {
+    :where(#tailwind-preflight-container) :-moz-focusring {
         outline: auto;
     }
-    :where(#dictionary-extension-app-container) :-moz-ui-invalid {
+    :where(#tailwind-preflight-container) :-moz-ui-invalid {
         box-shadow: none;
     }
-    :where(#dictionary-extension-app-container) progress {
+    :where(#tailwind-preflight-container) progress {
         vertical-align: baseline;
     }
-    :where(#dictionary-extension-app-container) ::-webkit-inner-spin-button,
-    :where(#dictionary-extension-app-container) ::-webkit-outer-spin-button {
+    :where(#tailwind-preflight-container) ::-webkit-inner-spin-button,
+    :where(#tailwind-preflight-container) ::-webkit-outer-spin-button {
         height: auto;
     }
-    :where(#dictionary-extension-app-container) [type="search"] {
+    :where(#tailwind-preflight-container) [type="search"] {
         -webkit-appearance: textfield;
         outline-offset: -2px;
     }
-    :where(#dictionary-extension-app-container) ::-webkit-search-decoration {
+    :where(#tailwind-preflight-container) ::-webkit-search-decoration {
         -webkit-appearance: none;
     }
-    :where(#dictionary-extension-app-container) ::-webkit-file-upload-button {
+    :where(#tailwind-preflight-container) ::-webkit-file-upload-button {
         -webkit-appearance: button;
         font: inherit;
     }
-    :where(#dictionary-extension-app-container) summary {
+    :where(#tailwind-preflight-container) summary {
         display: list-item;
     }
-    :where(#dictionary-extension-app-container) blockquote,
-    :where(#dictionary-extension-app-container) dl,
-    :where(#dictionary-extension-app-container) dd,
-    :where(#dictionary-extension-app-container) h1,
-    :where(#dictionary-extension-app-container) h2,
-    :where(#dictionary-extension-app-container) h3,
-    :where(#dictionary-extension-app-container) h4,
-    :where(#dictionary-extension-app-container) h5,
-    :where(#dictionary-extension-app-container) h6,
-    :where(#dictionary-extension-app-container) hr,
-    :where(#dictionary-extension-app-container) figure,
-    :where(#dictionary-extension-app-container) p,
-    :where(#dictionary-extension-app-container) pre {
+    :where(#tailwind-preflight-container) blockquote,
+    :where(#tailwind-preflight-container) dl,
+    :where(#tailwind-preflight-container) dd,
+    :where(#tailwind-preflight-container) h1,
+    :where(#tailwind-preflight-container) h2,
+    :where(#tailwind-preflight-container) h3,
+    :where(#tailwind-preflight-container) h4,
+    :where(#tailwind-preflight-container) h5,
+    :where(#tailwind-preflight-container) h6,
+    :where(#tailwind-preflight-container) hr,
+    :where(#tailwind-preflight-container) figure,
+    :where(#tailwind-preflight-container) p,
+    :where(#tailwind-preflight-container) pre {
         margin: 0;
     }
-    :where(#dictionary-extension-app-container) fieldset {
+    :where(#tailwind-preflight-container) fieldset {
         margin: 0;
         padding: 0;
     }
-    :where(#dictionary-extension-app-container) legend {
+    :where(#tailwind-preflight-container) legend {
         padding: 0;
     }
-    :where(#dictionary-extension-app-container) ol,
-    :where(#dictionary-extension-app-container) ul,
-    :where(#dictionary-extension-app-container) menu {
+    :where(#tailwind-preflight-container) ol,
+    :where(#tailwind-preflight-container) ul,
+    :where(#tailwind-preflight-container) menu {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    :where(#dictionary-extension-app-container) textarea {
+    :where(#tailwind-preflight-container) textarea {
         resize: vertical;
     }
-    :where(#dictionary-extension-app-container) input::placeholder,
-    :where(#dictionary-extension-app-container) textarea::placeholder {
+    :where(#tailwind-preflight-container) input::placeholder,
+    :where(#tailwind-preflight-container) textarea::placeholder {
         opacity: 1;
         color: var(--placeholder-color);
     }
-    :where(#dictionary-extension-app-container) button,
-    :where(#dictionary-extension-app-container) [role="button"] {
+    :where(#tailwind-preflight-container) button,
+    :where(#tailwind-preflight-container) [role="button"] {
         cursor: pointer;
     }
-    :where(#dictionary-extension-app-container) :disabled {
+    :where(#tailwind-preflight-container) :disabled {
         cursor: default;
     }
-    :where(#dictionary-extension-app-container) img,
-    :where(#dictionary-extension-app-container) svg,
-    :where(#dictionary-extension-app-container) video,
-    :where(#dictionary-extension-app-container) canvas,
-    :where(#dictionary-extension-app-container) audio,
-    :where(#dictionary-extension-app-container) iframe,
-    :where(#dictionary-extension-app-container) embed,
-    :where(#dictionary-extension-app-container) object {
+    :where(#tailwind-preflight-container) img,
+    :where(#tailwind-preflight-container) svg,
+    :where(#tailwind-preflight-container) video,
+    :where(#tailwind-preflight-container) canvas,
+    :where(#tailwind-preflight-container) audio,
+    :where(#tailwind-preflight-container) iframe,
+    :where(#tailwind-preflight-container) embed,
+    :where(#tailwind-preflight-container) object {
         display: block;
         vertical-align: middle;
     }
-    :where(#dictionary-extension-app-container) img,
-    :where(#dictionary-extension-app-container) video {
+    :where(#tailwind-preflight-container) img,
+    :where(#tailwind-preflight-container) video {
         max-width: 100%;
         height: auto;
     }
-    :where(#dictionary-extension-app-container) [hidden] {
+    :where(#tailwind-preflight-container) [hidden] {
         display: none;
     }
 }
