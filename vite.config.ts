@@ -8,6 +8,11 @@ export default defineConfig({
     define: {
         "process.env": {},
     },
+    resolve: {
+        alias: {
+            "@composables": resolve(__dirname, "./lib/utils/composables"),
+        },
+    },
     build: {
         lib: {
             entry: resolve(__dirname, "lib/main.ts"),
