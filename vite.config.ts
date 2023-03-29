@@ -13,6 +13,15 @@ export default defineConfig({
             "@composables": resolve(__dirname, "./lib/utils/composables"),
         },
     },
+    server: {
+        proxy: {
+            "/wordnik": {
+                target: "https://api.wordnik.com/",
+                changeOrigin: true,
+                rewrite: path => path.replace(/^\/wordnik/, ""),
+            },
+        },
+    },
     build: {
         lib: {
             entry: resolve(__dirname, "lib/main.ts"),
