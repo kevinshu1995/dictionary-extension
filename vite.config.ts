@@ -10,6 +10,7 @@ export default defineConfig({
     },
     resolve: {
         alias: {
+            "@": resolve(__dirname, "./lib"),
             "@composables": resolve(__dirname, "./lib/utils/composables"),
         },
     },
