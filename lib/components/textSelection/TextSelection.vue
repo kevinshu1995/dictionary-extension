@@ -38,7 +38,7 @@ async function openPopup() {
     >
         <button class="-p-1 -shadow-2xl -bg-white -border -border-gray-200" @click="openPopup">
             <div class="-w-4 -h-4" v-show="!isPopupExpand">i</div>
-            <div class="-w-80" v-show="isPopupExpand">
+            <div class="-w-80 -cursor-auto" v-show="isPopupExpand">
                 REAL CONTENT! Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500s
