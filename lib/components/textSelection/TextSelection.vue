@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, watch, nextTick } from "vue";
+import { ref, nextTick } from "vue";
 import SelectionContainer from "./components/SelectionContainer.vue";
+import PopupBody from "/lib/components/popupBody/PopupBody.vue";
 
 const selectionText = ref<string | null>(null);
 const isPopupExpand = ref(false);
@@ -20,13 +21,12 @@ function resetSelectionText() {
 }
 
 async function openPopup() {
+    if (isPopupExpand.value === true) return;
     isPopupExpand.value = true;
-    console.log(popper.value);
     if (popper.value?.update) {
         await nextTick();
         popper.value?.update();
     }
-    console.log("openPopup", selectionText.value);
 }
 </script>
 
@@ -36,12 +36,10 @@ async function openPopup() {
         @on-popup-hide="resetSelectionText"
         @popper="setPopperInstance"
     >
-        <button class="-p-1 -shadow-2xl -bg-white -border -border-gray-200" @click="openPopup">
-            <div class="-w-4 -h-4" v-show="!isPopupExpand">i</div>
-            <div class="-w-80 -cursor-auto" v-show="isPopupExpand">
-                REAL CONTENT! Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                1500s
+        <button @click="openPopup">
+            <div class="-bg-white -w-4 -h-4 -p-1 -shadow-2xl" v-show="!isPopupExpand">i</div>
+            <div class="-cursor-auto" v-show="isPopupExpand">
+                <PopupBody :selected-word="selectionText" :is-popup-expand="isPopupExpand" />
             </div>
         </button>
     </SelectionContainer>
