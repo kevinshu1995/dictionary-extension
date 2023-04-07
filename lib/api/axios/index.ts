@@ -9,3 +9,19 @@ export const wordnikAxios = new Interceptors.Interceptors(
     .apply(Interceptors.PrintLog)
     .apply(Interceptors.Wordnik).axios;
 
+export const merriamWebsterThesaurusAxios = new Interceptors.Interceptors(
+    axios.create({
+        baseURL: "/dictionaryapi/api/v3/references/thesaurus/json",
+    })
+)
+    .apply(Interceptors.PrintLog)
+    .apply(Interceptors.Thesaurus).axios;
+
+export const merriamWebsterCollegiate = new Interceptors.Interceptors(
+    axios.create({
+        baseURL: "/dictionaryapi/api/v3/references/collegiate/json",
+    })
+)
+    .apply(Interceptors.PrintLog)
+    .apply(Interceptors.Collegiate).axios;
+

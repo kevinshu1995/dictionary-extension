@@ -21,6 +21,11 @@ export default defineConfig({
                 changeOrigin: true,
                 rewrite: path => path.replace(/^\/wordnik/, ""),
             },
+            "/dictionaryapi": {
+                target: "https://dictionaryapi.com/",
+                changeOrigin: true,
+                rewrite: path => path.replace(/^\/dictionaryapi/, ""),
+            },
         },
     },
     build: {
