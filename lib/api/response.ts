@@ -1,8 +1,8 @@
 import type { AxiosResponse } from "axios";
 
-interface ResponseReturn {
+export interface ResponseReturn<T> {
     status: number;
-    data: AxiosResponse["data"] | null;
+    data: T | AxiosResponse["data"] | null;
     error: any;
 }
 
@@ -12,7 +12,10 @@ interface ResponseArguments {
     [key: string]: any;
 }
 
-export function generateResponse({ data, error }: ResponseArguments): ResponseReturn {
+export function generateResponse({
+    data,
+    error,
+}: ResponseArguments): ResponseReturn<ResponseArguments["data"]> {
     return {
         data: data?.data ?? null,
         status: data?.status ?? 5000,

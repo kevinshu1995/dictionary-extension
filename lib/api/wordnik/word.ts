@@ -8,7 +8,11 @@ export async function getAudio() {}
 
 type GetDefinitions = operations["getDefinitions"];
 
-export type Definition = definitions["Definition"];
+type OriginDefinition = definitions["Definition"];
+
+export interface Definition extends OriginDefinition {
+    exampleUses?: { [key: string]: any }[] | undefined;
+}
 
 // TODO api getDefinitions 定義
 export async function getDefinitions(
@@ -33,10 +37,10 @@ export async function getDefinitions(
             error: null,
         });
     } catch (error) {
-        return {
+        return generateResponse({
             data: null,
             error,
-        };
+        });
     }
 }
 
